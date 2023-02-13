@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap-5.3.0-alpha1-dist/css/bootstrap.css"/> <!-- 1o -->
+    <link rel="stylesheet" href="styles.css"/> <!-- 2o, nuestra hoja css personalizada debe ir despues del llamado a Bootstrap-->
+    <title>Mauricio Lopez - Contacto</title>
+</head>
+<body>
+  
+  <!-- As a heading -->
+  <!--
+  <nav class="navbar bg-body-tertiary" id="navbar">
+    <div class="container-fluid" style="display: flex; justify-content: space-evenly;">
+      <span class="navbar-brand mb-0 h1">About</span>
+      <span class="navbar-brand mb-0 h1">Proyectos</span>
+      <span class="navbar-brand mb-0 h1">Tiempo libre</span>
+      <span class="navbar-brand mb-0 h1">Contacto</span>
+    </div>
+  </nav>
+  <br/><br/><br/><br/>-->
+
+  <!--
+  <div style="display: flex; flex-direction: column;align-items: center;">
+    <img class="avatar" src="images/mauricio.jpeg" alt="foto del autor"/>
+    <br><br>
+    <h1>Mauricio Lopez</h1>
+    <h4>Desarrollador Web</h4>
+  </div>
+  -->
+
+  <nav class="navbar navbar-expand-lg color-black" id="nav">
+    <div class="container-fluid">
+      <a class="navbar-brand color-bco" href="index.html">MAURICIO LOPEZ</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link color-bco" aria-current="page" href="projects.html"
+            >PROYECTOS</a
+          >
+          <a class="nav-link color-bco" href="about.html">ACERCA DE MI</a>
+          <a class="nav-link color-bco" href="contact.html">CONTACTO</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+  <br><br><br><br><br><br>
+
+  <div id="contacto" class="center">
+    <h4>CONTACTAME</h4>
+    <hr />
+    <br />
+
+    <form>
+      <div class="mb-3 initial">
+        <label for="exampleInputNombre" class="form-label">Nombre</label>
+        <input
+          type="text"
+          class="form-control"
+          id="exampleInputNombre"
+          required
+        />
+      </div>
+      <div class="mb-3 initial">
+        <label for="exampleInputEmail1" class="form-label">Email</label>
+        <input
+          type="email"
+          class="form-control"
+          id="exampleInputEmail1"
+          required
+        />
+      </div>
+      <div class="mb-3 initial">
+        <label for="exampleInputTelefono" class="form-label">Teléfono</label>
+        <input
+          type="number"
+          class="form-control"
+          id="exampleInputTelefono"
+          required
+        />
+      </div>
+      <div class="mb-3 initial">
+        <label for="exampleFormControlTextarea1" class="form-label"
+          >Mensaje</label
+        >
+        <textarea
+          class="form-control"
+          id="exampleFormControlTextarea1"
+          rows="3" required
+        ></textarea>
+      </div>
+
+      <button type="submit" class="btn btn-primary">Enviar</button>
+    </form>
+  </div>
+
+
+  <br><br><br><br><br><br>
+
+  
+
+  <div class="color-bco color-black">
+    <div class="row" id="footer">
+      <div class="center col-sm-6 info-footer-centrado">
+        <h5>DIRECCIÓN</h5>
+        <p>B. Mitre 666</p>
+        <p>San Carlos de Bariloche - 8400</p>
+        <p>Provincia de Río Negro - Patagonia Argentina</p>
+      </div>
+      <div class="center col-sm-6 info-footer-centrado">
+        <h5>EN REDES</h5>
+        <div id="redes">
+          <a target="_blank" href="https://wa.me/5492944690909?text=Me%20contacto%20desde%20tu%20CV%20web"><img id="wpp-icon" src="icons/Whatsapp.ico" alt="logo Whatsapp"></a>
+          <a target="_blank" href="https://www.linkedin.com/in/mauricio-lopez-6a185b1ab/"><img id="in-icon" src="icons/linkedin.ico" alt="logo Linkedin"></a>
+        </div>
+      </div>
+    </div>
+    <p class="txt-centrado" id="licencia">Copyright © Mi sitio web 2023</p> 
+  </div>
+
+    
+</body>
+</html>
