@@ -35,11 +35,7 @@ body{  /*con esto posiciono el footer siempre al pie del vh*/
 }
 
 
-#nav {
-    position: fixed;
-    width: 100%;
 
-}
 .color-bco{
     color: white;
 }
