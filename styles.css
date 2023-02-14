@@ -101,6 +101,21 @@ body{  /*con esto posiciono el footer siempre al pie del vh*/
 #licencia{
     margin-bottom: 0%;
 }
+.width-card {
+    width: 28rem;
+}
+.order-cards {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-around;
+    margin-top: 55px;
+    margin-bottom: 30px;
+}
+.width-slides-form {
+    width: 48%;
+}
 
 
 
