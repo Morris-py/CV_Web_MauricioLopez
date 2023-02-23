@@ -2,6 +2,7 @@
 * {
     box-sizing: border-box;
 }
+
 body{  /*con esto posiciono el footer siempre al pie del vh*/
     display: grid;
     min-height: 100vh;
@@ -16,7 +17,7 @@ body{  /*con esto posiciono el footer siempre al pie del vh*/
     flex-direction: column;
     align-items: center;
     width: 100%; 
-    height: 60vh; 
+    height: 55vh; 
 }
 
 #foto_perfil {
@@ -41,6 +42,9 @@ body{  /*con esto posiciono el footer siempre al pie del vh*/
 }
 .color-black{
     background-color: black;
+}
+.bold {
+    font-weight: bold;
 }
 
 .centrado{
@@ -74,6 +78,9 @@ body{  /*con esto posiciono el footer siempre al pie del vh*/
 }
 .icon:hover {
     transform: scale(1.2);
+}
+.mouse:hover {
+    color: rgb(233, 170, 170);
 }
 
 #footer{
@@ -118,6 +125,79 @@ body{  /*con esto posiciono el footer siempre al pie del vh*/
 }
 
 
+@media only screen and (max-width: 1279px){
+    .cards-vertical{
+        margin-bottom: 55px;
+    }
+}
 
+#btn-menu {
+    background-color: white;
+    margin-right: 7px;
+}
 
-
+.switchDark{
+    background-color: #3494b1;
+    height: 29px;
+    width: 60px;
+    display: flex;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 1rem;
+    align-items: center;
+    justify-content: space-between;
+}
+.switchDark span{
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    display: block;
+    color: #fff;
+    background: none;
+}
+.switchDark::after{
+    display: block;
+    background: #fffbf5;
+    width: 1.8rem;
+    height: 1.8rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: unset;
+    border-radius: 50%;
+    transition: all .5s ease;
+    box-shadow: 0 0 1.5px 1.5px rgba(0, 0, 0, .5);
+    content: "";
+}
+.switchDark.active{
+    background: #fdd384;
+}
+.switchDark.active::after{
+    left: unset;
+    right: 0;
+}
+body{
+    background: #fff;
+    color: #000;
+}
+body.dark{
+    background: #222;
+    color: #fff;
+}
+.switch-modo{
+    width: 100%; 
+    display: flex; 
+    justify-content: flex-end;
+}
+#margin-switch-modo{
+    margin-right: 25px;
+}
+.fondo-card-oscuro{
+    background-color: rgb(57, 57, 57);
+}
+.warnings{
+    color: #B06AB3;
+    font-weight: bold;
+}
